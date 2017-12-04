@@ -15,12 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".activities.RegisterActivity"
+        <activity
+            android:name=".activities.RegisterActivity"
             android:screenOrientation="portrait" />
-
-        <activity android:name=".activities.UsersActivity"
+        <activity
+            android:name=".activities.UsersActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".activities.NewActivity"></activity>
     </application>
 
 </manifest>
