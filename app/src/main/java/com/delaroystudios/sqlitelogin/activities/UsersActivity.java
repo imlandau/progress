@@ -9,9 +9,6 @@ import android.widget.TextView;
 
 import com.delaroystudios.sqlitelogin.R;
 
-/**
- * Created by delaroy on 3/27/17.
- */
 public class UsersActivity extends AppCompatActivity {
 
     private TextView textViewName;
@@ -24,12 +21,19 @@ public class UsersActivity extends AppCompatActivity {
         textViewName = (TextView) findViewById(R.id.text1);
         String nameFromIntent = getIntent().getStringExtra("EMAIL");
         textViewName.setText("Welcome " + nameFromIntent);
-        Button toMenuBtn = (Button) findViewById(R.id.toMenuBtn);
+        TextView toMenuBtn = (TextView) findViewById(R.id.toMenuBtn);
+        TextView toLoginBtn = (TextView) findViewById(R.id.toLoginBtn);
 
         toMenuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(UsersActivity.this, NewActivity.class));
+            }
+        });
+        toLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(UsersActivity.this, LoginActivity.class));
             }
         });
     }
