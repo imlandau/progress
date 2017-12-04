@@ -14,10 +14,10 @@
         android:textStyle="bold"
         android:padding="16dp"
         android:textColor="@color/colorText"/>
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/toBtn"
+        android:id="@+id/toMenuBtn"
         android:text="@string/menu"
         android:clickable="true"
         android:focusable="true"
